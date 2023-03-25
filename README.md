@@ -15,7 +15,7 @@
  
 ## Installation
 
-To build the container and install the command, just type `make install` in this repository
+You need to install [docker](https://docs.docker.com/engine/install/ubuntu/) to use this tool. Once this is done, you can build the container and install the command by typing `make install` in this repository.
 
 ## Contributing
 
