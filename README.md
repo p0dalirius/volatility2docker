@@ -11,7 +11,8 @@
 ## Features
 
  - [x] [Volatility 2](https://github.com/volatilityfoundation/volatility) installation in a standalone container
-
+ - [x] Mount your current working directory on the host in `/workspace/` in the container
+ 
 ## Installation
 
 To build the container and install the command, just type `make install` in this repository
