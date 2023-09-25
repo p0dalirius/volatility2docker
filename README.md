@@ -17,6 +17,26 @@
 
 You need to install [docker](https://docs.docker.com/engine/install/ubuntu/) to use this tool. Once this is done, you can build the container and install the command by typing `make install` in this repository.
 
+If you are using:
+ - **Debian**: https://docs.docker.com/engine/install/debian/
+ - **Ubuntu**, **XUbuntu**, **LUbuntu**: https://docs.docker.com/engine/install/ubuntu/
+ - **Kali**: It is based on debian so you just need to follow the Debian tutorial https://docs.docker.com/engine/install/debian/.
+
+   The only different step in the tutorial for Kali is the last command of the first step _Add the repository to Apt sources_. Don't use:
+    ```sh
+    # Add the repository to Apt sources:
+    echo \
+      "deb [arch="$(dpkg --print-architecture)" signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/debian \
+      "$(. /etc/os-release && echo "$VERSION_CODENAME")" stable" | \
+      sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+    ```
+    
+    But use instead:
+    
+    ```sh
+    echo "deb [arch=amd64 signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/debian buster stable" > /etc/apt/sources.list.d/docker.list
+    ```
+
 ## Contributing
 
 Pull requests are welcome. Feel free to open an issue if you want to add other features.
