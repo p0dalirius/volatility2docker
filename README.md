@@ -1,4 +1,4 @@
-![banner](./.github/banner.png)
+![](./.github/banner.png)
 
 <p align="center">
   A volatility 2 docker for forensic investigations
